@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>discord.gg/uaee</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.postimg.cc/Y26FF7g3/1.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .text {
+      font-size: 3em;
+      color: black;
+      animation: glow 1.5s infinite alternate;
+    }
+    .sub-text {
+      margin-top: 15px;
+      font-size: 2em;
+      color: black;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px white, 0 0 10px white; }
+      to { text-shadow: 0 0 15px white, 0 0 30px white; }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">اذ ضربنا نضرب بيد من حديد</div>
+  <div class="sub-text">زحف</div>
+
+  <audio id="bg-music" autoplay loop muted>
+    <source src="https://l.top4top.io/m_35087pyz01.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // فك الكتم بعد ثانية علشان يشتغل الصوت تلقائي
+    setTimeout(() => {
+      const music = document.getElementById('bg-music');
+      music.muted = false;
+    }, 1000);
+  </script>
+</body>
+</html> GitHub
